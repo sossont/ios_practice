@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iphonecalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WqC-sO-00I" userLabel="displayLabel">
+                                <rect key="frame" x="10" y="174" width="394" height="182"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="80"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHL-gG-uNe">
+                                <rect key="frame" x="10" y="366" width="394" height="476"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OHZ-ld-2GL">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="476"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Viv-O9-ZXe">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="87"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzx-Ph-mYz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="87"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Kzx-Ph-mYz" secondAttribute="height" id="KUH-lq-Zxo"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                                        <state key="normal" title="AC">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickac:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oyn-Mg-pFS"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afp-Ib-6CG">
+                                                        <rect key="frame" x="102.5" y="0.0" width="87" height="87"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="afp-Ib-6CG" secondAttribute="height" id="fff-6t-9cs"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                                        <state key="normal" title="+/-">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickpm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UII-sy-F14"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TB5-gz-k46">
+                                                        <rect key="frame" x="204.5" y="0.0" width="87.5" height="87"/>
+                                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="TB5-gz-k46" secondAttribute="height" id="5nP-VH-3AM"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                                        <state key="normal" title="%">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eDp-D6-Jm2"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puQ-OE-821">
+                                                        <rect key="frame" x="307" y="0.0" width="87" height="87"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="puQ-OE-821" secondAttribute="height" id="wRD-D8-0bo"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="50"/>
+                                                        <state key="normal" title="÷">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickdiv:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HYP-F1-9RW"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="y2z-WU-gBd">
+                                                <rect key="frame" x="0.0" y="97" width="394" height="87.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BP-BP-wtk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="87.5"/>
+                                                        <color key="backgroundColor" red="0.16959530545264179" green="0.16959530545264179" blue="0.16959530545264179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="0BP-BP-wtk" secondAttribute="height" id="Yva-Xb-Kuq"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickbtn7:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UtN-K5-Gic"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbQ-rR-yrN">
+                                                        <rect key="frame" x="102.5" y="0.0" width="87" height="87.5"/>
+                                                        <color key="backgroundColor" red="0.16959530545264179" green="0.16959530545264179" blue="0.16959530545264179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="sbQ-rR-yrN" secondAttribute="height" id="7uz-OD-MgQ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickbtn8:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mOa-GH-j6J"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4a-0q-nyS">
+                                                        <rect key="frame" x="204.5" y="0.0" width="87.5" height="87.5"/>
+                                                        <color key="backgroundColor" red="0.16959530545264179" green="0.16959530545264179" blue="0.16959530545264179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="f4a-0q-nyS" secondAttribute="height" id="rwj-d0-xVL"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickbtn9:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZE8-C4-xf0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQ2-dA-W56">
+                                                        <rect key="frame" x="307" y="0.0" width="87" height="87.5"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="zQ2-dA-W56" secondAttribute="height" id="808-KW-7jI"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="50"/>
+                                                        <state key="normal" title="×">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickmul:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IfU-Ki-anb"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cts-iM-Ibk">
+                                                <rect key="frame" x="0.0" y="194.5" width="394" height="87"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVM-P0-hDu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="87"/>
+                                                        <color key="backgroundColor" red="0.16959530545264179" green="0.16959530545264179" blue="0.16959530545264179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="YVM-P0-hDu" secondAttribute="height" id="RQm-CO-5oK"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickbtn4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Cm-FO-sKf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRO-1m-icM">
+                                                        <rect key="frame" x="102.5" y="0.0" width="87" height="87"/>
+                                                        <color key="backgroundColor" red="0.16959530545264179" green="0.16959530545264179" blue="0.16959530545264179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="jRO-1m-icM" secondAttribute="height" id="xog-Pb-Q6O"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickbtn5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZfN-z7-Viw"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqe-Qa-rOw">
+                                                        <rect key="frame" x="204.5" y="0.0" width="87.5" height="87"/>
+                                                        <color key="backgroundColor" red="0.16959530545264179" green="0.16959530545264179" blue="0.16959530545264179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="Uqe-Qa-rOw" secondAttribute="height" id="qKQ-eL-VRW"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickbtn6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="thr-gn-hYX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0e-UU-Jcf">
+                                                        <rect key="frame" x="307" y="0.0" width="87" height="87"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="O0e-UU-Jcf" secondAttribute="height" id="eV9-az-CCR"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="50"/>
+                                                        <state key="normal" title="-">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickminus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y2P-T3-2qC"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="IWb-u6-mh1">
+                                                <rect key="frame" x="0.0" y="291.5" width="394" height="87.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCb-tE-dfn">
+                                                        <rect key="frame" x="0.0" y="0.0" width="87.5" height="87.5"/>
+                                                        <color key="backgroundColor" red="0.16959530545264179" green="0.16959530545264179" blue="0.16959530545264179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="pCb-tE-dfn" secondAttribute="height" id="SaQ-Cf-xIu"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickbtn1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bw4-a0-cyf"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5n-Bd-S8B">
+                                                        <rect key="frame" x="102.5" y="0.0" width="87" height="87.5"/>
+                                                        <color key="backgroundColor" red="0.16959530545264179" green="0.16959530545264179" blue="0.16959530545264179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="M5n-Bd-S8B" secondAttribute="height" id="ALU-4l-jsX"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickbtn2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GEp-ex-vri"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDv-hT-VHH">
+                                                        <rect key="frame" x="204.5" y="0.0" width="87.5" height="87.5"/>
+                                                        <color key="backgroundColor" red="0.16959530545264179" green="0.16959530545264179" blue="0.16959530545264179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="IDv-hT-VHH" secondAttribute="height" id="qs2-PS-QT1"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickbtn3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sTH-26-ITA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OVR-jb-baw">
+                                                        <rect key="frame" x="307" y="0.0" width="87" height="87.5"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="OVR-jb-baw" secondAttribute="height" id="R31-rb-AUt"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="50"/>
+                                                        <state key="normal" title="+">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickplus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9kd-i1-0uI"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jpR-io-IOP">
+                                                <rect key="frame" x="0.0" y="389" width="394" height="87"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Iw-SV-5dY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="189.5" height="87"/>
+                                                        <color key="backgroundColor" red="0.16959530545264179" green="0.16959530545264179" blue="0.16959530545264179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickbtn0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vfQ-Mc-EeJ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSa-Zw-0Cx">
+                                                        <rect key="frame" x="204.5" y="0.0" width="87.5" height="87"/>
+                                                        <color key="backgroundColor" red="0.16959530545264179" green="0.16959530545264179" blue="0.16959530545264179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="tSa-Zw-0Cx" secondAttribute="height" id="KTf-Fu-97R"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
+                                                        <state key="normal" title=".">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnE-ZK-xsZ">
+                                                        <rect key="frame" x="307" y="0.0" width="87" height="87"/>
+                                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="RnE-ZK-xsZ" secondAttribute="height" id="DGz-z2-IlW"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="50"/>
+                                                        <state key="normal" title="=">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="clickequal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hC9-ca-83v"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="IWb-u6-mh1" firstAttribute="height" secondItem="Viv-O9-ZXe" secondAttribute="height" id="1gL-tb-OvG"/>
+                                            <constraint firstItem="y2z-WU-gBd" firstAttribute="height" secondItem="Viv-O9-ZXe" secondAttribute="height" id="Y58-P5-eeQ"/>
+                                            <constraint firstItem="cts-iM-Ibk" firstAttribute="height" secondItem="Viv-O9-ZXe" secondAttribute="height" id="YjU-7S-lbl"/>
+                                            <constraint firstItem="8Iw-SV-5dY" firstAttribute="trailing" secondItem="M5n-Bd-S8B" secondAttribute="trailing" id="sOy-SX-gaM"/>
+                                            <constraint firstItem="jpR-io-IOP" firstAttribute="height" secondItem="Viv-O9-ZXe" secondAttribute="height" id="w8O-DR-fhU"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="OHZ-ld-2GL" secondAttribute="bottom" id="7L5-cr-lll"/>
+                                    <constraint firstAttribute="trailing" secondItem="OHZ-ld-2GL" secondAttribute="trailing" id="82K-gp-2pP"/>
+                                    <constraint firstItem="OHZ-ld-2GL" firstAttribute="top" secondItem="JHL-gG-uNe" secondAttribute="top" id="KLk-YA-JUK"/>
+                                    <constraint firstItem="OHZ-ld-2GL" firstAttribute="leading" secondItem="JHL-gG-uNe" secondAttribute="leading" id="yh1-Ql-Oxq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JHL-gG-uNe" secondAttribute="bottom" constant="20" id="3pr-rE-InE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JHL-gG-uNe" secondAttribute="trailing" constant="10" id="7bN-N2-EGN"/>
+                            <constraint firstItem="WqC-sO-00I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="EWP-Ja-e1c"/>
+                            <constraint firstItem="JHL-gG-uNe" firstAttribute="top" secondItem="WqC-sO-00I" secondAttribute="bottom" constant="10" id="XOh-li-I4U"/>
+                            <constraint firstItem="WqC-sO-00I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="130" id="YCU-j2-v3b"/>
+                            <constraint firstItem="JHL-gG-uNe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="aS7-bY-b5y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WqC-sO-00I" secondAttribute="trailing" constant="10" id="qXb-kc-lrY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="acButton" destination="Kzx-Ph-mYz" id="Z3h-J2-uaa"/>
+                        <outlet property="btn0" destination="8Iw-SV-5dY" id="ZSF-Sc-KAf"/>
+                        <outlet property="btn1" destination="pCb-tE-dfn" id="03h-HU-yjq"/>
+                        <outlet property="btn2" destination="M5n-Bd-S8B" id="SnG-RO-fHi"/>
+                        <outlet property="btn3" destination="IDv-hT-VHH" id="CZ1-Px-m5c"/>
+                        <outlet property="btn4" destination="YVM-P0-hDu" id="afJ-b6-TVa"/>
+                        <outlet property="btn5" destination="jRO-1m-icM" id="6hQ-iO-S3T"/>
+                        <outlet property="btn6" destination="Uqe-Qa-rOw" id="vIp-J1-edf"/>
+                        <outlet property="btn7" destination="0BP-BP-wtk" id="8Sy-os-MM1"/>
+                        <outlet property="btn8" destination="sbQ-rR-yrN" id="Ll3-aX-T2x"/>
+                        <outlet property="btn9" destination="f4a-0q-nyS" id="QO7-UV-8BJ"/>
+                        <outlet property="displayLabel" destination="WqC-sO-00I" id="AFP-yT-R3S"/>
+                        <outlet property="divButton" destination="puQ-OE-821" id="Qsh-Sr-Qnz"/>
+                        <outlet property="dotButton" destination="tSa-Zw-0Cx" id="VXU-R3-8C4"/>
+                        <outlet property="equalButton" destination="RnE-ZK-xsZ" id="t6E-cc-dFJ"/>
+                        <outlet property="minButton" destination="O0e-UU-Jcf" id="wqZ-TH-vXd"/>
+                        <outlet property="mulButton" destination="zQ2-dA-W56" id="J2f-jH-yDE"/>
+                        <outlet property="pButton" destination="TB5-gz-k46" id="Dze-kg-DJh"/>
+                        <outlet property="plusButton" destination="OVR-jb-baw" id="mZq-jd-U87"/>
+                        <outlet property="pmButton" destination="afp-Ib-6CG" id="qSU-W8-X3b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
