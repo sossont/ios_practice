@@ -119,6 +119,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="taz-CJ-CiC"/>
                     <connections>
+                        <outlet property="addButton" destination="Wa9-5S-ZG0" id="MVP-SI-00k"/>
                         <outlet property="btn1CenterY" destination="egw-Ui-hVS" id="t9X-Wd-UJU"/>
                         <outlet property="btn2CenterY" destination="Fvx-hN-6iT" id="ja9-eW-D7R"/>
                         <outlet property="btn3CenterY" destination="udd-ch-yvq" id="ILT-hy-qi7"/>

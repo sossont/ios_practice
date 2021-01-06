@@ -12,6 +12,7 @@ class FloatingViewController: UIViewController {
     @IBOutlet weak var btn1CenterY: NSLayoutConstraint!
     @IBOutlet weak var btn2CenterY: NSLayoutConstraint!
     @IBOutlet weak var btn3CenterY: NSLayoutConstraint!
+    @IBOutlet weak var addButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +30,7 @@ class FloatingViewController: UIViewController {
             self.btn1CenterY.constant = 80
             self.btn2CenterY.constant = 160
             self.btn3CenterY.constant = 240
-            
+            self.addButton.transform = CGAffineTransform(rotationAngle: .pi - (.pi / 4))    // 버튼 회전시키는 코드.
             self.view.layoutIfNeeded()  // 이걸 꼭 해야 화면 갱신이 된다.
         } completion: { (Bool) in
             // 애니메이션 끝나는 시점.
@@ -42,7 +43,7 @@ class FloatingViewController: UIViewController {
             self.btn1CenterY.constant = 0
             self.btn2CenterY.constant = 0
             self.btn3CenterY.constant = 0
-            
+            self.addButton.transform = CGAffineTransform.identity
             self.view.layoutIfNeeded()  // 이걸 꼭 해야 화면 갱신이 된다.
         } completion: { (Bool) in
             // 애니메이션 끝나는 시점.
