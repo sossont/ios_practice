@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FloatingButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherBG_Moon.png" translatesAutoresizingMaskIntoConstraints="NO" id="KDl-xy-PCz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHL-XH-48B">
+                                <rect key="frame" x="314" y="762" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="6fv-Us-TRN"/>
+                                    <constraint firstAttribute="height" constant="60" id="ees-Uc-TOD"/>
+                                </constraints>
+                                <state key="normal" image="add_icon_green.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Cq5-LJ-w0j" kind="presentation" identifier="showPopup" animates="NO" id="gxk-cR-et9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KDl-xy-PCz" secondAttribute="trailing" id="Mq7-FE-8V5"/>
+                            <constraint firstAttribute="bottom" secondItem="KDl-xy-PCz" secondAttribute="bottom" id="N6x-PX-gja"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wHL-XH-48B" secondAttribute="bottom" constant="40" id="P5M-uS-eCF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wHL-XH-48B" secondAttribute="trailing" constant="40" id="dnd-ht-bSp"/>
+                            <constraint firstItem="KDl-xy-PCz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hcS-hE-Dga"/>
+                            <constraint firstItem="KDl-xy-PCz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rcO-ZY-Fd8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="88"/>
+        </scene>
+        <!--Floating View Controller-->
+        <scene sceneID="BS3-Yg-ot7">
+            <objects>
+                <viewController id="Cq5-LJ-w0j" customClass="FloatingViewController" customModule="FloatingButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TYK-Rl-fck">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byK-ge-jtR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YdN-fO-XGp">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DO9-35-BJk" userLabel="food3">
+                                <rect key="frame" x="319" y="633" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="D2S-tQ-JTU"/>
+                                    <constraint firstAttribute="width" constant="50" id="M2c-LP-vtD"/>
+                                </constraints>
+                                <state key="normal" image="food3.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzv-3z-GcV" userLabel="food2">
+                                <rect key="frame" x="319" y="553" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Par-M9-hJS"/>
+                                    <constraint firstAttribute="width" constant="50" id="eSk-Op-8Wl"/>
+                                </constraints>
+                                <state key="normal" image="food2.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mM5-Mv-JPY" userLabel="food1">
+                                <rect key="frame" x="319" y="473" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="DrE-En-uHC"/>
+                                    <constraint firstAttribute="height" constant="50" id="yXD-J8-4Oe"/>
+                                </constraints>
+                                <state key="normal" image="food1.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wa9-5S-ZG0" userLabel="addbutton">
+                                <rect key="frame" x="314" y="708" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Baq-Pv-fyX"/>
+                                    <constraint firstAttribute="width" constant="60" id="C3X-bw-vC3"/>
+                                </constraints>
+                                <state key="normal" image="add_icon_green.png"/>
+                                <connections>
+                                    <action selector="dismissFloating:" destination="Cq5-LJ-w0j" eventType="touchUpInside" id="ANk-kV-9o7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4ro-Hg-pkE"/>
+                        <constraints>
+                            <constraint firstItem="byK-ge-jtR" firstAttribute="top" secondItem="TYK-Rl-fck" secondAttribute="top" id="3bH-wp-KTZ"/>
+                            <constraint firstItem="4ro-Hg-pkE" firstAttribute="trailing" secondItem="Wa9-5S-ZG0" secondAttribute="trailing" constant="40" id="A93-KB-gE0"/>
+                            <constraint firstItem="byK-ge-jtR" firstAttribute="leading" secondItem="TYK-Rl-fck" secondAttribute="leading" id="AB9-xn-R5t"/>
+                            <constraint firstItem="Wa9-5S-ZG0" firstAttribute="centerY" secondItem="nzv-3z-GcV" secondAttribute="centerY" constant="160" id="Fvx-hN-6iT"/>
+                            <constraint firstItem="Wa9-5S-ZG0" firstAttribute="centerX" secondItem="DO9-35-BJk" secondAttribute="centerX" id="OQj-Zt-mxU"/>
+                            <constraint firstItem="Wa9-5S-ZG0" firstAttribute="centerX" secondItem="nzv-3z-GcV" secondAttribute="centerX" id="RyM-pM-aIi"/>
+                            <constraint firstItem="4ro-Hg-pkE" firstAttribute="bottom" secondItem="Wa9-5S-ZG0" secondAttribute="bottom" constant="40" id="Tvx-hL-ejL"/>
+                            <constraint firstItem="Wa9-5S-ZG0" firstAttribute="centerY" secondItem="DO9-35-BJk" secondAttribute="centerY" constant="80" id="egw-Ui-hVS"/>
+                            <constraint firstAttribute="bottom" secondItem="byK-ge-jtR" secondAttribute="bottom" id="lbm-JQ-SCR"/>
+                            <constraint firstItem="Wa9-5S-ZG0" firstAttribute="centerX" secondItem="mM5-Mv-JPY" secondAttribute="centerX" id="uB7-KL-Ys4"/>
+                            <constraint firstItem="Wa9-5S-ZG0" firstAttribute="centerY" secondItem="mM5-Mv-JPY" secondAttribute="centerY" constant="240" id="udd-ch-yvq"/>
+                            <constraint firstAttribute="trailing" secondItem="byK-ge-jtR" secondAttribute="trailing" id="wSn-dt-mbY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="taz-CJ-CiC"/>
+                    <connections>
+                        <outlet property="btn1CenterY" destination="egw-Ui-hVS" id="t9X-Wd-UJU"/>
+                        <outlet property="btn2CenterY" destination="Fvx-hN-6iT" id="ja9-eW-D7R"/>
+                        <outlet property="btn3CenterY" destination="udd-ch-yvq" id="ILT-hy-qi7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ltb-27-PLo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="957.97101449275374" y="87.723214285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WeatherBG_Moon.png" width="180" height="320.16000366210938"/>
+        <image name="add_icon_green.png" width="385.60000610351562" height="384.79998779296875"/>
+        <image name="food1.png" width="256" height="256"/>
+        <image name="food2.png" width="256" height="256"/>
+        <image name="food3.png" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

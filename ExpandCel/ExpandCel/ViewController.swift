@@ -8,7 +8,7 @@
 import UIKit
 
 class ExpandCell:UITableViewCell{
-    
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
     
@@ -27,6 +27,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     //Model
     struct ExpandDataModel{
         var description: String
+        var title: String
         var isExpand: Bool
     }
     
@@ -35,6 +36,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: "expandCel_ID", for: indexPath) as! ExpandCell
         
         cell.descriptionLabel.text = dataModels[indexPath.row].description
+        cell.titleLabel.text = dataModels[indexPath.row].title
         
         if dataModels[indexPath.row].isExpand == true
         {
@@ -69,12 +71,19 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
             "long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long "
         ]   // 실제 서버에서 오는 데이터일것이다. 실무에서는
         
-        for (_,value) in textArray.enumerated(){
-            
-            dataModels.append(ExpandDataModel.init(description: value, isExpand: false))
-            
+        let titleArray = ["Title one",
+        "Title two",
+        "Title three",
+        "Title four",
+        "Title five"
+        ]
+        
+        for index in 0..<titleArray.count{
+            dataModels.append(ExpandDataModel.init(description: textArray[index], title: titleArray[index], isExpand: false))
         }
     }
+    
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // 클릭하면 확장하거나 축소해야한다 -> isExpand 값이 바뀌어야한다.
@@ -83,3 +92,21 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         tableView.reloadRows(at: [indexPath], with: .none)
     }
 }
+
+/* 셀 클릭했을 때 탁탁 튀는거 해결방안
+ 
+ 1. tableView.reloaddata() 어느정도 해결.
+ 
+ 2. heightForRowAt 에서 정확한 높이를 지정. 확실히 해결.
+ 
+ 3. tableView.estiamtedSectionHeaderHeight = 0
+ tableView.estiamtedSectionFooterHeight = 0
+ => 어느정도 해결.
+ 
+ 4. 애니메이션 효과 없애는 방법 -> 확실히 해결.
+ UIView.setAnimationsEnabled(false)
+ tableView.reloadRows(at: [indexPath], with: .none)
+ UIVIew.setAnimationsEnabled(true)
+ 리로드하고 트루로 안바꿔주면 모든 애니메이션 효과가 안나오기 떄문에 큰일남
+ 
+ */
