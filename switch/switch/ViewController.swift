@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        btn.layer.cornerRadius = 25
+        btn.layer.cornerRadius = btn.bounds.width / 2
         view1.layer.cornerRadius = 25
     }
 

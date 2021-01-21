@@ -20,7 +20,7 @@
                                 <rect key="frame" x="107" y="423" width="200" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZr-Ga-tjb">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="150" y="0.0" width="50" height="50"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="cDH-FG-uGA"/>
@@ -33,10 +33,11 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <constraints>
+                                    <constraint firstItem="rZr-Ga-tjb" firstAttribute="top" secondItem="NsF-aI-Za6" secondAttribute="top" id="3yZ-2b-7fU"/>
                                     <constraint firstAttribute="height" constant="50" id="COr-8K-uBq"/>
                                     <constraint firstAttribute="width" constant="200" id="JQX-3n-1Dd"/>
-                                    <constraint firstItem="rZr-Ga-tjb" firstAttribute="centerX" secondItem="NsF-aI-Za6" secondAttribute="centerX" constant="-75" id="bfT-u5-n94"/>
-                                    <constraint firstItem="rZr-Ga-tjb" firstAttribute="centerY" secondItem="NsF-aI-Za6" secondAttribute="centerY" id="hSU-ug-pL8"/>
+                                    <constraint firstItem="rZr-Ga-tjb" firstAttribute="leading" secondItem="NsF-aI-Za6" secondAttribute="leading" constant="150" id="Vhc-Uj-ga2"/>
+                                    <constraint firstAttribute="bottom" secondItem="rZr-Ga-tjb" secondAttribute="bottom" id="dgD-CZ-OOO"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -49,7 +50,6 @@
                     </view>
                     <connections>
                         <outlet property="btn" destination="rZr-Ga-tjb" id="MRh-LZ-BBS"/>
-                        <outlet property="btncenterX" destination="bfT-u5-n94" id="S1V-qb-4eC"/>
                         <outlet property="view1" destination="NsF-aI-Za6" id="L1y-Br-NJG"/>
                     </connections>
                 </viewController>
