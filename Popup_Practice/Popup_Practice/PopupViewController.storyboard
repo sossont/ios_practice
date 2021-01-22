@@ -79,11 +79,24 @@
                                     <constraint firstItem="wgM-aG-Bdw" firstAttribute="top" secondItem="lK3-c4-u0a" secondAttribute="bottom" constant="20" id="t3P-ed-4U0"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L27-7O-DOp">
+                                <rect key="frame" x="302" y="220.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7RB-0W-0z0"/>
+                                    <constraint firstAttribute="width" constant="50" id="S8N-9x-EeZ"/>
+                                </constraints>
+                                <state key="normal" image="done_check_icon.png"/>
+                                <connections>
+                                    <action selector="donebtn:" destination="GTa-hV-mLE" eventType="touchUpInside" id="cuh-4z-cEV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VDn-0O-N1g"/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aRi-wF-Gb0" firstAttribute="centerY" secondItem="mfG-HX-4I9" secondAttribute="centerY" multiplier="90%" id="5Ca-7X-ycf"/>
+                            <constraint firstItem="L27-7O-DOp" firstAttribute="centerX" secondItem="aRi-wF-Gb0" secondAttribute="trailing" id="8Yi-lv-mbb"/>
+                            <constraint firstItem="L27-7O-DOp" firstAttribute="centerY" secondItem="aRi-wF-Gb0" secondAttribute="top" id="uru-dw-mzy"/>
                             <constraint firstItem="aRi-wF-Gb0" firstAttribute="centerX" secondItem="mfG-HX-4I9" secondAttribute="centerX" id="xXv-mM-3H5"/>
                         </constraints>
                     </view>
@@ -96,6 +109,7 @@
     <resources>
         <image name="balloon_3.png" width="282.72000122070312" height="418.55999755859375"/>
         <image name="bg5.png" width="585" height="366"/>
+        <image name="done_check_icon.png" width="512" height="512"/>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
