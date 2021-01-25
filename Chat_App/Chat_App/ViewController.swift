@@ -86,11 +86,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             inputTextView.text = ""
         }
         
-        chatTableView.reloadData()
+        let lastindexPath = IndexPath(row: chatDatas.count - 1, section: 0)
+        
+        // 방법 1 : chatTableView.reloadData() 리로드는 조금 부자연스럽다.
+        // 방법 2 :
+        chatTableView.insertRows(at: [lastindexPath], with: UITableView.RowAnimation.automatic)
         
         inputTextViewHeight.constant = 35
         
-        let lastindexPath = IndexPath(row: chatDatas.count - 1, section: 0)
         // TableView에는 원하는 곳으로 이동하는 함수가 있다. 고로 전송할때마다 최신 대화로 이동.
         chatTableView.scrollToRow(at: lastindexPath, at: UITableView.ScrollPosition.bottom, animated: true)
     }
