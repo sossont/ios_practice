@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0276EC2625C02C6F0054400C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0276EC2525C02C6F0054400C /* LoginViewController.swift */; };
 		028ED5FF25C01A30001C88C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028ED5FE25C01A30001C88C2 /* AppDelegate.swift */; };
 		028ED60125C01A30001C88C2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028ED60025C01A30001C88C2 /* SceneDelegate.swift */; };
 		028ED60325C01A30001C88C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 028ED60225C01A30001C88C2 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0276EC2525C02C6F0054400C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		028ED5FB25C01A30001C88C2 /* HowTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HowTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		028ED5FE25C01A30001C88C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		028ED60025C01A30001C88C2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				028ED60025C01A30001C88C2 /* SceneDelegate.swift */,
 				028ED60225C01A30001C88C2 /* ViewController.swift */,
 				028ED60425C01A30001C88C2 /* Main.storyboard */,
+				0276EC2525C02C6F0054400C /* LoginViewController.swift */,
 				028ED60725C01A32001C88C2 /* Assets.xcassets */,
 				028ED60925C01A32001C88C2 /* LaunchScreen.storyboard */,
 				028ED60C25C01A32001C88C2 /* Info.plist */,
@@ -213,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0276EC2625C02C6F0054400C /* LoginViewController.swift in Sources */,
 				028ED60325C01A30001C88C2 /* ViewController.swift in Sources */,
 				028ED5FF25C01A30001C88C2 /* AppDelegate.swift in Sources */,
 				028ED60125C01A30001C88C2 /* SceneDelegate.swift in Sources */,

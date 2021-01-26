@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         let message = remoteConfig["splash_message"].stringValue
         
         
-        if(caps){
+        if(caps){ // true면 앱이 무조건 꺼지고, false면 다음 화면 실행.
             
             let alert = UIAlertController(title: "공지사항", message: message, preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: { (action) in
@@ -66,6 +66,12 @@ class ViewController: UIViewController {
             }))
             
             self.present(alert, animated: true, completion: nil)
+        }else{
+            
+            let loginVC = self.storyboard?.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
+            loginVC.modalPresentationStyle = .fullScreen
+            self.present(loginVC, animated: false, completion: nil)
+            
         }
         
         self.view.backgroundColor = UIColor(hex: color!)
