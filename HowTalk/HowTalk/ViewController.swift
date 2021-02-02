@@ -60,8 +60,8 @@ class ViewController: UIViewController {
         
         if(caps){ // true면 앱이 무조건 꺼지고, false면 다음 화면 실행.
             
-            let alert = UIAlertController(title: "공지사항", message: message, preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "확인", style: UIAlertAction.Style.default, handler: { (action) in
+            let alert = UIAlertController(title: "공지사항", message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "확인", style: .default, handler: { (action) in
                 exit(0)
             }))
             
@@ -69,7 +69,7 @@ class ViewController: UIViewController {
         }else{
             
             let loginVC = self.storyboard?.instantiateViewController(identifier: "LoginViewController") as! LoginViewController
-            loginVC.modalPresentationStyle = .fullScreen
+            loginVC.modalPresentationStyle = .fullScreen    // ios13부터는 safe area가 있기 때문에 이것을 안해주면 전체화면이 안된다.
             self.present(loginVC, animated: false, completion: nil)
             
         }
