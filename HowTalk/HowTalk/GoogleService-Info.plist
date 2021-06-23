@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>325738155829-k4f98qui7g4rt7jt8jh56jjgdnd9nv83.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.325738155829-k4f98qui7g4rt7jt8jh56jjgdnd9nv83</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDwzkQoM-5TAoQITfKTpZjl0YPjWhYSRBw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>325738155829</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.hwanwoo.HowTalk</string>
+	<key>PROJECT_ID</key>
+	<string>howt-27f22</string>
+	<key>STORAGE_BUCKET</key>
+	<string>howt-27f22.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:325738155829:ios:2c5a431c247994910bc67c</string>
+</dict>
+</plist>

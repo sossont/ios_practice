@@ -85,8 +85,8 @@ class SignUpViewController: UIViewController, UINavigationControllerDelegate, PH
             Storage.storage().reference().child("userImages").child(uid).putData(image!, metadata: nil) { (data, err) in
                 
                 Storage.storage().reference().child("userImages").child(uid).downloadURL { (url, err) in
-                    
-                    let values = ["userName":self.name.text,"profileImageUrl":url?.absoluteString]
+                    let urls = url?.absoluteString
+                    let values = ["userName":self.name.text,"profileImageUrl":urls,"uid":Auth.auth().currentUser?.uid]
                     Database.database().reference().child("users").child(uid).setValue(values) { (err, ref) in
                         
                         if(err==nil){   // 에러가 없을 경우

@@ -19,6 +19,8 @@
 		02CDC54B25C144C1007E1CDE /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CDC54A25C144C1007E1CDE /* SignUpViewController.swift */; };
 		02DF2D8A25C2B63F00B3CA08 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DF2D8925C2B63F00B3CA08 /* PeopleViewController.swift */; };
 		02DF2DA225C7BF4700B3CA08 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DF2DA125C7BF4700B3CA08 /* UserModel.swift */; };
+		02DF2DA625C9522B00B3CA08 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DF2DA525C9522B00B3CA08 /* ChatViewController.swift */; };
+		02DF2DAA25C9539300B3CA08 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02DF2DA925C9539300B3CA08 /* ChatModel.swift */; };
 		12697FF2E930B05A1B8D80C3 /* Pods_HowTalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933BDCAF98947364707E8132 /* Pods_HowTalk.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		02CDC54A25C144C1007E1CDE /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		02DF2D8925C2B63F00B3CA08 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		02DF2DA125C7BF4700B3CA08 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		02DF2DA525C9522B00B3CA08 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		02DF2DA925C9539300B3CA08 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		144604F4D8F64D8CC55E81A6 /* Pods-HowTalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowTalk.release.xcconfig"; path = "Target Support Files/Pods-HowTalk/Pods-HowTalk.release.xcconfig"; sourceTree = "<group>"; };
 		933BDCAF98947364707E8132 /* Pods_HowTalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HowTalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5BD6EA8484F1DD14813E8B9 /* Pods-HowTalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HowTalk.debug.xcconfig"; path = "Target Support Files/Pods-HowTalk/Pods-HowTalk.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,14 +79,15 @@
 		028ED5FD25C01A30001C88C2 /* HowTalk */ = {
 			isa = PBXGroup;
 			children = (
+				02DF2DA825C9537E00B3CA08 /* Model */,
 				028ED5FE25C01A30001C88C2 /* AppDelegate.swift */,
 				028ED60025C01A30001C88C2 /* SceneDelegate.swift */,
 				028ED60225C01A30001C88C2 /* ViewController.swift */,
 				028ED60425C01A30001C88C2 /* Main.storyboard */,
 				02DF2D8925C2B63F00B3CA08 /* PeopleViewController.swift */,
 				02CDC54A25C144C1007E1CDE /* SignUpViewController.swift */,
-				02DF2DA125C7BF4700B3CA08 /* UserModel.swift */,
 				0276EC2525C02C6F0054400C /* LoginViewController.swift */,
+				02DF2DA525C9522B00B3CA08 /* ChatViewController.swift */,
 				028ED60725C01A32001C88C2 /* Assets.xcassets */,
 				028ED60925C01A32001C88C2 /* LaunchScreen.storyboard */,
 				028ED60C25C01A32001C88C2 /* Info.plist */,
@@ -90,6 +95,15 @@
 				02A6CDB725C0210C00B75D69 /* RemoteConfigDefaults.plist */,
 			);
 			path = HowTalk;
+			sourceTree = "<group>";
+		};
+		02DF2DA825C9537E00B3CA08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				02DF2DA125C7BF4700B3CA08 /* UserModel.swift */,
+				02DF2DA925C9539300B3CA08 /* ChatModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B3E8CFDC312D6B00FEEEE229 /* Pods */ = {
@@ -227,11 +241,13 @@
 			files = (
 				0276EC2625C02C6F0054400C /* LoginViewController.swift in Sources */,
 				02DF2DA225C7BF4700B3CA08 /* UserModel.swift in Sources */,
+				02DF2DA625C9522B00B3CA08 /* ChatViewController.swift in Sources */,
 				028ED60325C01A30001C88C2 /* ViewController.swift in Sources */,
 				028ED5FF25C01A30001C88C2 /* AppDelegate.swift in Sources */,
 				02DF2D8A25C2B63F00B3CA08 /* PeopleViewController.swift in Sources */,
 				028ED60125C01A30001C88C2 /* SceneDelegate.swift in Sources */,
 				02CDC54B25C144C1007E1CDE /* SignUpViewController.swift in Sources */,
+				02DF2DAA25C9539300B3CA08 /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
