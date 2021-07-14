@@ -1,3 +1,10 @@
+//
+//  10809.swift
+//  CodingTest
+//
+//  Created by 정환우 on 2021/07/14.
+//
+
 import Foundation
 
 let array = Array(readLine()!).map{ String($0)}
