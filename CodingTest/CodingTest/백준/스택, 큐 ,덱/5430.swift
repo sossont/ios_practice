@@ -1,3 +1,5 @@
+// 시간 초과.
+
 import Foundation
 
 let T = Int(readLine()!)!

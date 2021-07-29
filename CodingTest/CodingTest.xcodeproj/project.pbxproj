@@ -23,6 +23,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0208156F26B271E800882A9E /* 1874.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1874.swift; sourceTree = "<group>"; };
+		0208157026B2791400882A9E /* 17298.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 17298.swift; sourceTree = "<group>"; };
+		0208157126B280E000882A9E /* 18258.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 18258.swift; sourceTree = "<group>"; };
+		0208157226B2844700882A9E /* 2164.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2164.swift; sourceTree = "<group>"; };
+		0208157326B28A6400882A9E /* 1966.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1966.swift; sourceTree = "<group>"; };
+		0208157426B293B300882A9E /* 10866.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10866.swift; sourceTree = "<group>"; };
+		0208157526B29B4900882A9E /* 1021.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1021.swift; sourceTree = "<group>"; };
+		0208157626B29E6100882A9E /* 5430.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5430.swift; sourceTree = "<group>"; };
 		020C606626B1448600BF9263 /* 10828.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10828.swift; sourceTree = "<group>"; };
 		020C606726B14D6200BF9263 /* 4949.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4949.swift; sourceTree = "<group>"; };
 		0248CB352696FC26009415DE /* 3052.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3052.swift; sourceTree = "<group>"; };
@@ -65,6 +73,14 @@
 			children = (
 				020C606626B1448600BF9263 /* 10828.swift */,
 				020C606726B14D6200BF9263 /* 4949.swift */,
+				0208156F26B271E800882A9E /* 1874.swift */,
+				0208157026B2791400882A9E /* 17298.swift */,
+				0208157126B280E000882A9E /* 18258.swift */,
+				0208157226B2844700882A9E /* 2164.swift */,
+				0208157326B28A6400882A9E /* 1966.swift */,
+				0208157426B293B300882A9E /* 10866.swift */,
+				0208157526B29B4900882A9E /* 1021.swift */,
+				0208157626B29E6100882A9E /* 5430.swift */,
 			);
 			name = "스택, 큐 ,덱";
 			path = "스택, 큐 ,덱";
