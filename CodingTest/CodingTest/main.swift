@@ -4,7 +4,9 @@ let T = Int(readLine()!)!
 for _ in 0..<T {
     var flag = true
     var rev = false
-    let f = readLine()!.map{String($0)}
+    var d = readLine()!
+    d = d.replacingOccurrences(of: "RR", with: "")
+    let f = Array(d)
     let _ = readLine()!
     var arr = readLine()!.components(separatedBy: ["[",",","]"," "]).filter({$0 != ""}).map{Int(String($0))!}
     for chr in f {
