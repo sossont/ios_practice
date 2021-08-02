@@ -9,6 +9,9 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel:UILabel!
+    @IBOutlet weak var ageLabel:UILabel!
+    
     @IBAction func popToPrev(){
         self.navigationController?.popViewController(animated: true)
     }
@@ -28,6 +31,10 @@ class SecondViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        self.nameLabel.text = UserInformation.shared.name
+        self.ageLabel.text = UserInformation.shared.age
+    
         print("secondVC 뷰가 보여질 예졍")
         
     }
