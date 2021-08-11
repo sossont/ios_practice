@@ -41,6 +41,7 @@
 		02CB0CE326836B150095B5B0 /* CodingTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02CB0CE626836B150095B5B0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		02CB0CEE268371E00095B5B0 /* 1992.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1992.swift; sourceTree = "<group>"; };
+		02DD3E4E26C403D6001C517E /* 11054.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11054.swift; sourceTree = "<group>"; };
 		02EE905A269EC7AA009A40C9 /* 4673.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4673.swift; sourceTree = "<group>"; };
 		02EE905C269ECA96009A40C9 /* 1065.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1065.swift; sourceTree = "<group>"; };
 		02EE905E269ECC15009A40C9 /* 4344.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4344.swift; sourceTree = "<group>"; };
@@ -97,6 +98,7 @@
 				023CC03026C3B86C003294FB /* 2156.swift */,
 				023CC03126C3C21B003294FB /* 11053.swift */,
 				023CC03226C3C7EE003294FB /* 12865.swift */,
+				02DD3E4E26C403D6001C517E /* 11054.swift */,
 			);
 			name = "동적계획법 1";
 			path = "동적계획법 1";
