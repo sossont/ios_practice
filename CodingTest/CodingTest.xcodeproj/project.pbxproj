@@ -47,6 +47,10 @@
 		024DCA9C26C4F48200CC1A02 /* 10844.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10844.swift; sourceTree = "<group>"; };
 		02878AC326D8D2CA00F0F91B /* 7569.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 7569.swift; sourceTree = "<group>"; };
 		02878AC426D8DA5500F0F91B /* 2206.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2206.swift; sourceTree = "<group>"; };
+		02BC573B26FC8DAC00040AC0 /* 11047.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11047.swift; sourceTree = "<group>"; };
+		02BC573C26FC902900040AC0 /* 1931.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1931.swift; sourceTree = "<group>"; };
+		02BC573D26FCAA9900040AC0 /* 11399.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11399.swift; sourceTree = "<group>"; };
+		02BC573F26FCB25D00040AC0 /* 1541.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1541.swift; sourceTree = "<group>"; };
 		02CB0CE326836B150095B5B0 /* CodingTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CodingTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02CB0CE626836B150095B5B0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		02CB0CEE268371E00095B5B0 /* 1992.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1992.swift; sourceTree = "<group>"; };
@@ -130,6 +134,18 @@
 			path = "동적계획법 1";
 			sourceTree = "<group>";
 		};
+		02BC573A26FC8D9C00040AC0 /* 그리디 */ = {
+			isa = PBXGroup;
+			children = (
+				02BC573B26FC8DAC00040AC0 /* 11047.swift */,
+				02BC573C26FC902900040AC0 /* 1931.swift */,
+				02BC573D26FCAA9900040AC0 /* 11399.swift */,
+				02BC573F26FCB25D00040AC0 /* 1541.swift */,
+			);
+			name = "그리디";
+			path = "그리디";
+			sourceTree = "<group>";
+		};
 		02CB0CDA26836B150095B5B0 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +174,7 @@
 		02CB0CED268371CF0095B5B0 /* 백준 */ = {
 			isa = PBXGroup;
 			children = (
+				02BC573A26FC8D9C00040AC0 /* 그리디 */,
 				022DC0A026E7B2200067CAD2 /* 트리 */,
 				02DDD2FE26D7B70C00B989DE /* 수학, 정렬, 그래프 */,
 				023CC02E26C3AD4E003294FB /* 동적계획법 1 */,
