@@ -1,19 +1,32 @@
 import Foundation
 
-let input = readLine()!.split(separator: "-").map{String($0)}
-let plus = input[0].split(separator: "+").map{Int(String($0))!}
-var answer = 0
-for num in plus {
-    answer += num
-}
+var t = Int(readLine()!)!
+var result = [Int]()
+while t >= 1 {
+    let n = Int(readLine()!)!
+    var apply = [[Int]]()
+    
+    // 지원자의 각 성적 입력받기. index가 지원자의 번호라고 생각하면 된다.
+    for _ in 0..<n {
+        apply.append(readLine()!.split(separator: " ").map{Int(String($0))!})
 
-var tmp = 0
-for i in 1..<input.count {
-    let num = input[i].split(separator:"+").map{Int(String($0))!}
-    for t in num{
-        tmp += t
     }
+    var answer = 1
+    apply.sort { $0[0] < $1[0] }
+    var mininterview = apply[0][1]   // 나보다 순위 높은 애들중에 최대값.
+    for i in 1..<apply.count {  // 서류 성적 1등은 무조건 통과임. 그래서 2등부터.
+        
+        // 원래는 2중 for문을 사용했으나, 시간을 줄이기 위함.
+        if mininterview > apply[i][1] {
+            answer += 1
+            mininterview = apply[i][1]
+        }
+        
+    }
+    result.append(answer)
+    t-=1
 }
 
-answer = answer - tmp
-print(answer)
+for answer in result {
+    print(answer)
+}

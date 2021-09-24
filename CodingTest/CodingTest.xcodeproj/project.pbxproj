@@ -31,6 +31,9 @@
 		0208157426B293B300882A9E /* 10866.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10866.swift; sourceTree = "<group>"; };
 		0208157526B29B4900882A9E /* 1021.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1021.swift; sourceTree = "<group>"; };
 		0208157626B29E6100882A9E /* 5430.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5430.swift; sourceTree = "<group>"; };
+		020B332426FDE3C100ED59C9 /* 13305.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 13305.swift; sourceTree = "<group>"; };
+		020B332526FDE60000ED59C9 /* 2437.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2437.swift; sourceTree = "<group>"; };
+		020B332626FDFF1500ED59C9 /* 1744.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1744.swift; sourceTree = "<group>"; };
 		020C606626B1448600BF9263 /* 10828.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10828.swift; sourceTree = "<group>"; };
 		020C606726B14D6200BF9263 /* 4949.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4949.swift; sourceTree = "<group>"; };
 		022DC0A126E7B24A0067CAD2 /* 11725.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 11725.swift; sourceTree = "<group>"; };
@@ -141,6 +144,9 @@
 				02BC573C26FC902900040AC0 /* 1931.swift */,
 				02BC573D26FCAA9900040AC0 /* 11399.swift */,
 				02BC573F26FCB25D00040AC0 /* 1541.swift */,
+				020B332426FDE3C100ED59C9 /* 13305.swift */,
+				020B332526FDE60000ED59C9 /* 2437.swift */,
+				020B332626FDFF1500ED59C9 /* 1744.swift */,
 			);
 			name = "그리디";
 			path = "그리디";
